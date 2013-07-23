@@ -22,7 +22,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'therubyracer'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
@@ -39,6 +38,7 @@ end
 
   gem 'devise', '2.1.0'
   gem 'cancan', '1.6.7'
+  gem 'country_select'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
