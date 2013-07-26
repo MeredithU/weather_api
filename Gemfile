@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'httparty'
+gem "gmaps4rails", "~> 1.5.6"
 
 
 # Gems used only for assets and not required
