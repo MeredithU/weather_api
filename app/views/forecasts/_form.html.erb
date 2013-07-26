@@ -3,6 +3,11 @@
     <%= country_select("forecast", "country", nil, iso_codes: true) %>
   </p>
 
+  <p>
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </p>
+
   <%= f.submit "New Forecast" %>
 
 <% end %>
