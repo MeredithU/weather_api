@@ -1,5 +1,7 @@
 class Forecast < ActiveRecord::Base
+
   include HTTParty
+
   attr_accessible :country, :zip
 
   def country_name

@@ -1,9 +1,20 @@
 <h2> Country </h2>
   <%= @forecast.country_name %>
 
-<h2> Temp 'C by zip code</h2>
+<h2> Temp 'C</h2>
 <p>
-  <%= @forecast.temp_c %>
+  <%= @forecast.conditions['temp_c'] %>
+</p>
+
+<h2> Temp 'F</h2>
+<p>
+  <%= @forecast.conditions['temp_f'] %>
+</p>
+
+
+<h2> City </h2>
+<p>
+  <%= @forecast.conditions['city'] %>
 </p>
 
 <h2> Weather </h2>

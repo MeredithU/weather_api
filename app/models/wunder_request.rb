@@ -20,7 +20,7 @@ class WunderRequest
     HTTParty.get("http://api.wunderground.com/api/80c09000360316c5/geolookup/conditions/q/#{country}.json")
   end
 
-  def country_name
+  def self.country_name
     ::CountrySelect::COUNTRIES[country]
   end
 
