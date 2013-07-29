@@ -13,9 +13,14 @@ class CitiesController < ApplicationController
     @city = City.new(params[:city])
     if @city.save
       flash[:notice] = "City has been saved."
+      redirect_to @city
     else
       #later
     end
+  end
+
+  def show
+    @city = City.find(params[:id])
   end
 
 end
