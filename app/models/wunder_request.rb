@@ -32,5 +32,6 @@ class WunderRequest
   def self.current_observation
     response['current_observation']
   end
-end
 
+
+end
