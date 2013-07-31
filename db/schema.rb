@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130729215643) do
+ActiveRecord::Schema.define(:version => 20130731160657) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -33,6 +33,13 @@ ActiveRecord::Schema.define(:version => 20130729215643) do
   create_table "forecasts", :force => true do |t|
     t.string   "country"
     t.integer  "zip"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "trips", :force => true do |t|
+    t.integer  "startzip"
+    t.integer  "endzip"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

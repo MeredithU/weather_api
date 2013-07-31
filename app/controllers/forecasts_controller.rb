@@ -1,25 +1,25 @@
 class ForecastsController < ApplicationController
 
   def index
-
+   # @json = Trip.all.to_gmaps4rails
   end
 
   def new
-    @forecast = Forecast.new
+    @trip = Trip.new
   end
 
   def create
-    @forecast = Forecast.new(params[:forecast])
-    if @forecast.save
-      flash[:notice] = "Forecast saved."
-      redirect_to @forecast
+    @trip = Trip.new(params[:trip])
+    if @trip.save
+      flash[:notice] = "Trip saved."
+      redirect_to @trip
     else
       #later
     end
   end
 
   def show
-    @forecast = Forecast.find(params[:id])
+    @trip = Trip.find(params[:id])
   end
 
 end
