@@ -1,0 +1,18 @@
+<h2> Temperature</h2>
+<p>
+  <%= @trip.conditions['temperature_string'] %>
+</p>
+
+<h2> Forecast </h2>
+<p>
+  <%= @trip.conditions['weather'] %>
+</p>
+
+<h2> Suggestatron Roadtrip Deal</h2>
+<p>
+  <%= @trip.local_deals.first['dealTitle'] %><br />
+  <%= @trip.local_deals.first['name'] %><br />
+  <%= @trip.local_deals.first['address'] %><br />
+  <%= @trip.local_deals.first['city'] %><br />
+</p>
+
