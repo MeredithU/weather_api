@@ -1,0 +1,12 @@
+<%= form_for(@city) do |f| %>
+
+<h2>Enter the zip</h2>
+  <p>
+    <%= f.label :zipcode %><br />
+    <%= f.text_field :zipcode %>
+  </p>
+
+
+  <%= f.submit %>
+
+<% end %>

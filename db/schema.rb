@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130728143504) do
+ActiveRecord::Schema.define(:version => 20130729215643) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130728143504) do
     t.boolean  "gmaps"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "zipcode"
   end
 
   create_table "eightcoupons", :force => true do |t|
