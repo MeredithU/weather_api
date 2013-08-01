@@ -8,6 +8,11 @@
   <%= @trip.conditions['weather'] %>
 </p>
 
+<h2> Excuse </h2>
+<p>
+<td><%= @trip.excuse %></td>
+</p>
+
 <h2> Suggestatron Roadtrip Deal</h2>
 <p>
   <%= @trip.local_deals.first['dealTitle'] %><br />
@@ -15,4 +20,6 @@
   <%= @trip.local_deals.first['address'] %><br />
   <%= @trip.local_deals.first['city'] %><br />
 </p>
+
+
 
